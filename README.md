@@ -1,2 +1,2 @@
 # Surveillance-Simulator
-This folder consists of a simple streaming application which transmits multiple video feeds on a client-server request based interaction. The application is developed in JAVA and uses TCP protocol for transmission of image data encapsulated within JSON objects.
+Multiple video feed transmission with efficient image compression and reproduction was the primary objective of this application.  The format of streaming data has been found far from ideal as the bandwidth required is higher than popular coding techniques like MPEG2 or H.264. Using GZIP algorithm the data is compressed to fit into a reasonable data transfer range. It is then compressed further and encoded to Base64 since the data is being transferred via JSON objects using TCP. 
